@@ -93,4 +93,4 @@ And the contents of the file will be:
 
 Custom templates can be set by specifying the path to the template inside the `templates` directory as the `template` frontmatter.
 
-See [`/example`](/example) for a full example.
+See [`/example`](https://github.com/di/corvid/blob/master/example) for a full example.
