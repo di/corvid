@@ -11,7 +11,7 @@ import jinja2
 
 
 def render_markdown(env, input_path, output_path):
-    md = markdown.Markdown()
+    md = markdown.Markdown(extensions=["extra"])
     file_parts = frontmatter.load(input_path)
 
     context = {**file_parts.metadata, "content": md.convert(file_parts.content)}
