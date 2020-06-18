@@ -10,7 +10,7 @@ with open(path.join(here, "README.md"), encoding="utf-8") as f:
 
 setup(
     name="corvid",
-    version="1.0.0",
+    version="1.1.0",
     description="An opinionated simple static site generator",
     long_description=long_description,
     long_description_content_type="text/markdown",
