@@ -2,8 +2,7 @@
 
 corvid is an opinionated simple static site generator.
 
-It processes Markdown files, static assets and directories producing a 1:1
-heiarchy of compiled content.
+It processes Markdown files, static assets and directories producing a 1:1 hierarchy of compiled content.
 
 It includes a reloadable local development server, supports custom markdown frontmatter and Jinja templates.
 
@@ -15,11 +14,14 @@ $ pip install corvid
 
 ## Running
 
-By default corvid expects to be run in a directory with an `input` directory. With no parameters, corvid will process all files in this directory into the `output` directory, and exit.
+By default corvid expects to be run in a directory with an `input` directory. With no parameters, corvid will process all files in this directory into the `output` directory and exit.
 
 ```
+Usage:
+$ corvid [OPTIONS]
+
+For help:
 $ corvid --help
-Usage: corvid [OPTIONS]
 
 Options:
   -l, --listen          Enable live reloading
@@ -57,10 +59,11 @@ Welcome
 <html>
     <head>
         <title>{{ title }}</title>
+    </head>
     <body>
         {{ content }}
     </body>
-</body>
+</html>
 ```
 
 Running `corvid` will produce the additional `output` directory:
@@ -82,15 +85,15 @@ And the contents of the file will be:
 <html>
     <head>
         <title>This is the Index</title>
-    <head>
+    </head>
     <body>
         <p>Welcome</p>
     </body>
-</body>
+</html>
 ```
 
 ## Using templates
 
-Custom templates can be set by specifying the path to the template inside the `templates` directory as the `template` frontmatter.
+Custom templates can be set by specifying the path to the template (inside the `templates` directory) as the `template` frontmatter in an individual page. See [`bar.md`](https://raw.githubusercontent.com/di/corvid/master/example/input/foo/bar.md) for an example.
 
-See [`/example`](https://github.com/di/corvid/blob/master/example) for a full example.
+See [`/example`](https://github.com/di/corvid/blob/master/example) for the full `input` -> `template` -> `output` folder structure.
