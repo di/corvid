@@ -32,7 +32,7 @@ setup(
     package_dir={"": "src"},
     python_requires=">=3.5, <4",
     install_requires=[
-        "click>=7.0<=8.0",
+        "click>=7.0,<=8.0",
         "python-frontmatter>=0.5.0",
         "Markdown>=3.1",
         "jinja2>=2.10",
