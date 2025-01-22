@@ -10,7 +10,7 @@ with open(path.join(here, "README.md"), encoding="utf-8") as f:
 
 setup(
     name="corvid",
-    version="1.1.0",
+    version="1.1.1",
     description="An opinionated simple static site generator",
     long_description=long_description,
     long_description_content_type="text/markdown",
@@ -32,7 +32,7 @@ setup(
     package_dir={"": "src"},
     python_requires=">=3.5, <4",
     install_requires=[
-        "click>=7.0<=8.0",
+        "click>=7.0,<=8.0",
         "python-frontmatter>=0.5.0",
         "Markdown>=3.1",
         "jinja2>=2.10",
